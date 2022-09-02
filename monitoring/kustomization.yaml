@@ -14,7 +14,6 @@ helmCharts:
     valuesInline:
       persistence:
         enabled: true
-        storageClassName: grafana-volume
         size: 5Gi
 
       ingress:
