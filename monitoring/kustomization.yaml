@@ -35,6 +35,11 @@ helmCharts:
     valuesInline:
       alertmanager:
         enabled: false
+      securityContext:
+        runAsUser: 1000
+        runAsNonRoot: true
+        runAsGroup: 65534
+        fsGroup: 2000
       server:
         ingress:
           enabled: true
