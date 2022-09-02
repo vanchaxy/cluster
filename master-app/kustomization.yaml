@@ -10,3 +10,4 @@ resources:
   - base/ingress-nginx.yaml
   - base/metallb.yaml
   - base/sealed-secrets.yaml
+  - base/volumes/volume.yaml
