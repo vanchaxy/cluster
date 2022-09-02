@@ -4,9 +4,14 @@ kind: Kustomization
 helmCharts:
   - name: grafana
     namespace: monitoring
+    releaseName: silex
     version: 6.35.0
     repo: https://grafana.github.io/helm-charts
     valuesInline:
+      persistence:
+        enabled: true
+        size: 5Gi
+
       ingress:
         enabled: true
 
@@ -30,6 +35,7 @@ helmCharts:
 
   - name: prometheus
     namespace: monitoring
+    releaseName: silex
     version: 15.12.0
     repo: https://prometheus-community.github.io/helm-charts
     valuesInline:

@@ -4,6 +4,7 @@ kind: Kustomization
 helmCharts:
   - name: ingress-nginx
     namespace: ingress-nginx
+    releaseName: silex
     version: 4.2.3
     repo: https://kubernetes.github.io/ingress-nginx
     valuesInline:

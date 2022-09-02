@@ -7,6 +7,7 @@ resources:
 helmCharts:
   - name: external-dns
     namespace: external-dns
+    releaseName: silex
     version: 6.8.1
     repo: https://charts.bitnami.com/bitnami
     valuesInline:

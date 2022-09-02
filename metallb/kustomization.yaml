@@ -9,5 +9,6 @@ resources:
 helmCharts:
   - name: metallb
     namespace: metallb
+    releaseName: silex
     version: 4.1.1
     repo: https://charts.bitnami.com/bitnami

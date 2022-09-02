@@ -4,6 +4,7 @@ kind: Kustomization
 helmCharts:
   - name: sealed-secrets
     namespace: sealed-secrets
+    releaseName: silex
     version: 2.6.1
     repo: https://bitnami-labs.github.io/sealed-secrets
     includeCRDs: true

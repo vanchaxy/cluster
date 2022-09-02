@@ -7,6 +7,7 @@ resources:
 helmCharts:
   - name: cert-manager
     namespace: cert-manager
+    releaseName: silex
     version: v1.9.1
     repo: https://charts.jetstack.io
     valuesInline:
