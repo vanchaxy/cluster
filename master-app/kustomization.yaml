@@ -9,4 +9,5 @@ resources:
   - base/monitoring.yaml
   - base/ingress-nginx.yaml
   - base/metallb.yaml
+  - base/openebs.yaml
   - base/sealed-secrets.yaml
