@@ -7,3 +7,4 @@ helmCharts:
     releaseName: silex
     version: 3.3.1
     repo: https://openebs.github.io/charts
+    includeCRDs: true
