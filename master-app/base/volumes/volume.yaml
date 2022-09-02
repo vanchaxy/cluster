@@ -5,7 +5,9 @@ metadata:
   labels:
     type: local
 spec:
+  accessModes:
+    - ReadWriteOnce
   capacity:
-    storage: 40000Mi
+    storage: 40Gi
   hostPath:
     path: "/mnt/data/pv"
