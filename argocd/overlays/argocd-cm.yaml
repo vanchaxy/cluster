@@ -1,5 +1,7 @@
 apiVersion: v1
 data:
+  statusbadge.enabled: 'true'
+  users.anonymous.enabled: 'true'
   kustomize.buildOptions: --enable-helm
 kind: ConfigMap
 metadata:
