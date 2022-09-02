@@ -3,10 +3,10 @@ kind: Kustomization
 
 resources:
   - base/master-app.yaml
-  - base/apps/argo-cd.yaml
-  - base/apps/cert-manager.yaml
-  - base/apps/external-dns.yaml
-  - base/apps/grafana.yaml
-  - base/apps/ingress-nginx.yaml
-  - base/apps/metallb.yaml
-  - base/apps/sealed-secrets.yaml
+  - base/argo-cd.yaml
+  - base/cert-manager.yaml
+  - base/external-dns.yaml
+  - base/monitoring.yaml
+  - base/ingress-nginx.yaml
+  - base/metallb.yaml
+  - base/sealed-secrets.yaml

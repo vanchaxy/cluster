@@ -1,15 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: grafana
+  name: ingress-nginx
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: grafana
+    namespace: ingress-nginx
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: grafana
+    path: ingress-nginx
     repoURL: https://github.com/vanchaxy/cluster
     targetRevision: HEAD
   syncPolicy:

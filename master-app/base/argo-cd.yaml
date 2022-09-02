@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sealed-secrets
+  name: argo-cd
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: sealed-secrets
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: sealed-secrets
+    path: argocd
     repoURL: https://github.com/vanchaxy/cluster
     targetRevision: HEAD
   syncPolicy:
     automated:
-      prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+      prune: true
