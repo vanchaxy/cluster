@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  admin.enabled: false
-  users.anonymous.enabled: true
+  admin.enabled: 'false'
+  users.anonymous.enabled: 'true'
   policy.default: role:readonly
   accounts.vanchaxy: apiKey, login
-  statusbadge.enabled: true
+  statusbadge.enabled: 'true'
   kustomize.buildOptions: --enable-helm
