@@ -9,5 +9,6 @@ helmCharts:
     repo: https://openebs.github.io/charts
     includeCRDs: true
     valuesInline:
-      defaultStorageConfig:
-        enabled: false
+      localprovisioner:
+        enableDeviceClass: false
+        enableHostpathClass: false
