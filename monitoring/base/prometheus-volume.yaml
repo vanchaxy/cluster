@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-home
+  name: prometheus-volume
   labels:
     type: local
 spec:
   accessModes:
     - ReadWriteOnce
   capacity:
-    storage: 40Gi
+    storage: 8Gi
   hostPath:
-    path: "/mnt/data/pv"
+    path: "/mnt/data/prometheus-volume"
