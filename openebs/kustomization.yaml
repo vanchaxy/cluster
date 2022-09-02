@@ -8,13 +8,6 @@ helmCharts:
     version: 3.3.1
     repo: https://openebs.github.io/charts
     includeCRDs: true
-
-patches:
-  - target:
-      version: storage.k8s.io/v1
-      kind: StorageClass
-      name: openebs-hostpath
-    patch: |-
-      - op: add
-        path: /metadata/annotations/storageclass.kubernetes.io/is-default-class
-        value: true
+    valuesInline:
+      defaultStorageConfig:
+        enabled: false
