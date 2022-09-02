@@ -1,10 +1,10 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
 data:
   statusbadge.enabled: 'true'
   users.anonymous.enabled: 'true'
   policy.default: role:readonly
+  accounts.vanchaxy: apiKey, login
   kustomize.buildOptions: --enable-helm
-kind: ConfigMap
-metadata:
-  name: argocd-cm
-
