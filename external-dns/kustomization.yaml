@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - base/external-dns-secret.yaml
+
+helmCharts:
+  - name: external-dns
+    namespace: external-dns
+    version: 6.8.1
+    repo: https://charts.bitnami.com/bitnami
+    valuesInline:
+      provider: cloudflare
+      cloudflare:
+        secretName: external-dns-secret
+        proxied: false
