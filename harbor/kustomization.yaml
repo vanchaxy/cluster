@@ -5,17 +5,24 @@ helmCharts:
   - name: harbor
     namespace: harbor
     releaseName: silex
-    version: 1.9.3
-    repo: https://helm.goharbor.io
+    version: 15.2.1
+    repo: https://charts.bitnami.com/bitnami
     valuesInline:
-      expose:
-        ingress:
-          hosts:
-            core: harbor.ivanchenko.io
-            notary: notary.ivanchenko.io
+      exposureType: ingress
+      ingress:
+        core:
+          hostname: harbor.ivanchenko.io
           annotations:
             cert-manager.io/cluster-issuer: letsencrypt
             kubernetes.io/ingress.class: nginx
             nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
             nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-      externalURL: https://harbor.ivanchenko.io
+          tls: true
+        notary:
+          hostname: notary.ivanchenko.io
+          annotations:
+            cert-manager.io/cluster-issuer: letsencrypt
+            kubernetes.io/ingress.class: nginx
+            nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+            nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+          tls: true
