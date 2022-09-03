@@ -8,6 +8,7 @@ helmCharts:
     version: 15.2.1
     repo: https://charts.bitnami.com/bitnami
     valuesInline:
+      externalURL: https://harbor.ivanchenko.io
       exposureType: ingress
       ingress:
         core:
