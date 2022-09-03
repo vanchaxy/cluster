@@ -6,8 +6,9 @@ resources:
   - base/argo-cd.yaml
   - base/cert-manager.yaml
   - base/external-dns.yaml
-  - base/monitoring.yaml
+  - base/harbor.yaml
   - base/ingress-nginx.yaml
   - base/metallb.yaml
+  - base/monitoring.yaml
   - base/openebs.yaml
   - base/sealed-secrets.yaml
