@@ -19,11 +19,5 @@ helmCharts:
             nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
             nginx.ingress.kubernetes.io/ssl-passthrough: "true"
           tls: true
-        notary:
-          hostname: notary.ivanchenko.io
-          annotations:
-            cert-manager.io/cluster-issuer: letsencrypt
-            kubernetes.io/ingress.class: nginx
-            nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-            nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-          tls: true
+      notary:
+        enabled: false
