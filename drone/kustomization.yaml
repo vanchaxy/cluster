@@ -46,7 +46,7 @@ helmCharts:
     valuesInline:
       env:
         DRONE_RPC_HOST: silex-drone
-        DRONE_NAMESPACE_DEFAULT: silex-drone
+        DRONE_NAMESPACE_DEFAULT: drone
 
       extraSecretNamesForEnvFrom:
         - drone-secret
