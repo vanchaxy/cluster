@@ -16,15 +16,15 @@ helmCharts:
       expose:
         type: ingress
 
-      ingress:
-        hosts:
-          core: harbor.ivanchenko.io
+        ingress:
+          hosts:
+            core: harbor.ivanchenko.io
 
-        annotations:
-          cert-manager.io/cluster-issuer: letsencrypt
-          kubernetes.io/ingress.class: nginx
-          nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-          nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+          annotations:
+            cert-manager.io/cluster-issuer: letsencrypt
+            kubernetes.io/ingress.class: nginx
+            nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+            nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 
       registry:
         credentials:
