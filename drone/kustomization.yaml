@@ -65,6 +65,6 @@ helmCharts:
               - path: /
                 pathType: Prefix
         tls:
-          - secretName: drone-tls
+          - secretName: drone-runner-tls
             hosts:
               - drone-runner.ivanchenko.io
