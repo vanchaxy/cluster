@@ -45,7 +45,8 @@ helmCharts:
     repo: https://charts.drone.io
     valuesInline:
       env:
-        DRONE_NAMESPACE_DEFAULT: drone
+        DRONE_RPC_HOST: silex-drone
+        DRONE_NAMESPACE_DEFAULT: silex-drone
 
       extraSecretNamesForEnvFrom:
         - drone-secret
