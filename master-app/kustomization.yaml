@@ -5,6 +5,7 @@ resources:
   - base/master-app.yaml
   - base/argo-cd.yaml
   - base/cert-manager.yaml
+  - base/drone.yaml
   - base/external-dns.yaml
   - base/harbor.yaml
   - base/ingress-nginx.yaml
