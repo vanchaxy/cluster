@@ -9,7 +9,7 @@ helmCharts:
     namespace: drone
     releaseName: silex
     version: 0.6.1
-    repo: https://charts.drone.io/drone
+    repo: https://charts.drone.io
     valuesInline:
       env:
         DRONE_SERVER_HOST: drone.ivanchenko.io
