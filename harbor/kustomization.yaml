@@ -16,6 +16,9 @@ helmCharts:
       expose:
         type: ingress
 
+        tls:
+          certSource: none
+
         ingress:
           hosts:
             core: harbor.ivanchenko.io
