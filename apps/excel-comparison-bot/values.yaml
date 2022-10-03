@@ -1,0 +1,6 @@
+excel-comparison-bot:
+  image:
+    tag: "main-490ceea6"
+  imagePullSecrets:
+    - name: regcred
+  existingSecret: "token-secret"

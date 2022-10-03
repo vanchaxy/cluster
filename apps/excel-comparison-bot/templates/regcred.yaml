@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: excel-comparison-bot
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCnOJpi5lG807KtWzVxfbugbIdWz+LbXX6MqD9x7iT90+KUZAwSmiDgsdoPV2RHG9bKJDi/DYHzHtz2S6GXmamAodxWmrOCobn2aENNOURGISmnEruXeRYMgXtBhomHg5nzClMePyfamXDoCXN/ergedQ/R2PewSKwqt4/pairyJDmKbRGuYFle7UjZ+Jic/ql7NVCyf9zBq6eHggR+N65cbZfqsHGqvsTEe9U3SyEZuUkfPgrn9QwIldQvitHT79ezoCKA+6uIIZKNl+r8aPQAK7m1PpCO95mBsEWageBFgS64FPIBJxxEOYLs4ui20DiLRN2pYiJvbdHYpkO+KYwfG9/yRNnmViPGSqAb1cOCQ5iCmKro8WUYC3CHeRZu8Q0stkeewprIHpqaG0e3lixw4g4ieCJJyLZqeIYpBDy/DSTTjkBNV2+l+fN1nNyBaMVjTWXNP59NqWT+mC4B64gRfoUo9CAtYNh6uQo9EjGwER6jEDeLLj8Vdz3u4DJ3Guie59lYe0MG0RAUuAdGQCRL55lqJY4cKFDrzlI+H7ZhNdbbLhykG/rufE6dAJAYiEpwl5nftk07x818HiScQYgGz+JY2HSBlnnS1Ypl1CZ8KmQj//FVAtbYrZsBiOTP1Qm/v0lYUcMWrf98B1rNlySDdz9Mmh049IQWwl3joyeP/LHEDOSk0j3QxC5kHRtAT0vWYf+xLY5z+pHsDVNRZ06Ye2xlXec2gsXMSBHk35N8EASuV8ilMNiB+VZoePWTaLO1Gly61ijKMDlII5GFgeQVnwZc1fCpaXpI3ZZlQhBvnwajUK4vbN+b2imK9i+vZvPvJvibWTDlqv4pR8YBQ0r3XY6cZQ1ijLpIG59XTLwe/Q1POGQUNVF2BmwFg/BTQZ0kfg==
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: excel-comparison-bot
+    type: kubernetes.io/dockerconfigjson
+
