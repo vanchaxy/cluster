@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - base/argocd-server-ingress.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+  - base/harbor-registry-secret.yaml
 
 patchesStrategicMerge:
   - overlays/argocd-cm.yaml

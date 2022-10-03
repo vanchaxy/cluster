@@ -9,3 +9,13 @@ data:
   accounts.vanchaxy: apiKey, login
   statusbadge.enabled: 'true'
   kustomize.buildOptions: --enable-helm
+  repositories:
+    - url: https://registry.ivanchenko.io/library/
+      type: helm
+      name: harbor
+      usernameSecret:
+        name: harbor-registry
+        key: username
+      passwordSecret:
+        name: harbor-registry
+        key: password
