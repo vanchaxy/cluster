@@ -3,7 +3,9 @@ kind: Kustomization
 
 resources:
   - base/harbor-secret.yaml
-  - base/harbor-hotfix-secret.yaml
+
+patchesStrategicMerge:
+  - base/registry-dpl-secret.yaml
 
 helmCharts:
   - name: harbor
