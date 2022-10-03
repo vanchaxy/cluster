@@ -17,7 +17,9 @@ helmCharts:
         type: ingress
 
         tls:
-          certSource: auto
+          certSource: secret
+          secret:
+            secretName: registry-tls
 
         ingress:
           hosts:
