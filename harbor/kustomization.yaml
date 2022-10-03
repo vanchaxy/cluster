@@ -4,9 +4,6 @@ kind: Kustomization
 resources:
   - base/harbor-secret.yaml
 
-patchesStrategicMerge:
-  - base/registry-dpl-secret.yaml
-
 helmCharts:
   - name: harbor
     namespace: harbor
@@ -45,3 +42,6 @@ helmCharts:
 
       notary:
         enabled: false
+
+patches:
+  - patch: overlays/registry-dpl-secret.yaml
