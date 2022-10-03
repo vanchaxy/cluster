@@ -11,7 +11,7 @@ helmCharts:
     version: 1.10.0
     repo: https://helm.goharbor.io
     valuesInline:
-      externalURL: https://harbor.ivanchenko.io
+      externalURL: https://registry.ivanchenko.io
 
       expose:
         type: ingress
@@ -21,7 +21,7 @@ helmCharts:
 
         ingress:
           hosts:
-            core: harbor.ivanchenko.io
+            core: registry.ivanchenko.io
 
           annotations:
             cert-manager.io/cluster-issuer: letsencrypt
