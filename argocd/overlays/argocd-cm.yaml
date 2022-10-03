@@ -14,8 +14,8 @@ data:
       type: helm
       name: harbor
       usernameSecret:
-        name: harbor-registry
+        name: harbor-registry-secret
         key: username
       passwordSecret:
-        name: harbor-registry
+        name: harbor-registry-secret
         key: password
