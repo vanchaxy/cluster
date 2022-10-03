@@ -44,4 +44,4 @@ helmCharts:
         enabled: false
 
 patches:
-  - patch: overlays/registry-dpl-secret.yaml
+  - path: overlays/registry-dpl-secret.yaml
