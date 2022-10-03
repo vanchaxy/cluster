@@ -17,7 +17,7 @@ helmCharts:
         type: ingress
 
         tls:
-          certSource: autoa
+          certSource: auto
 
         ingress:
           hosts:
