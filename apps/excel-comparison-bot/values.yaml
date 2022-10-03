@@ -1,6 +1,6 @@
 excel-comparison-bot:
   image:
-    tag: "main-490ceea6"
+    tag: "main-8405ea22"
   imagePullSecrets:
     - name: regcred
   resources:
