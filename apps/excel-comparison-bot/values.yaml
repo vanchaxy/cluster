@@ -1,10 +1,10 @@
 excel-comparison-bot:
   image:
-    tag: "main-8405ea221"
+    tag: "main-8405ea22"
   imagePullSecrets:
     - name: regcred
   resources:
     limits:
       cpu: 1000m
-      memory: 1024Mi
+      memory: 2048Mi
   existingSecret: "token-secret"
