@@ -1,0 +1,6 @@
+st-reborn:
+  existingSecret: "pass-secret"
+
+  config:
+    Gameplay:
+      uDifficulty: 3

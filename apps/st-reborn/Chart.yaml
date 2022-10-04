@@ -1,13 +1,13 @@
 apiVersion: v2
 
 name: apps
-description: Parent helm chart for excel-comparison-bot
+description: Parent helm chart for st-reborn
 
 type: application
 version: 0.0.1
 appVersion: "0.0.1"
 
 dependencies:
-  - name: excel-comparison-bot
+  - name: st-reborn
     repository: oci://registry.ivanchenko.io/library
-    version: 0.1.1
+    version: 0.1.14

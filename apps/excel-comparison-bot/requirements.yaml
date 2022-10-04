@@ -1,4 +1,0 @@
-dependencies:
-  - name: excel-comparison-bot
-    repository: oci://registry.ivanchenko.io/library
-    version: 0.1.1
