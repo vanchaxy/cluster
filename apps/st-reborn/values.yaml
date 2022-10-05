@@ -8,4 +8,4 @@ st-reborn:
   type: LoadBalancer
   annotations:
     metallb.universe.tf/allow-shared-ip: production
-    metallb.universe.tf/address-pool: production-public-ips
+    metallb.universe.tf/address-pool: metallb-pool
