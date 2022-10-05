@@ -6,6 +6,7 @@ st-reborn:
       uDifficulty: 3
 
   type: LoadBalancer
-  annotations:
-    metallb.universe.tf/allow-shared-ip: production
-    metallb.universe.tf/address-pool: metallb-pool
+  service:
+    annotations:
+      metallb.universe.tf/allow-shared-ip: production
+      metallb.universe.tf/address-pool: metallb-pool
