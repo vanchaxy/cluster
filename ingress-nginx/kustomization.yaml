@@ -8,6 +8,8 @@ helmCharts:
     version: 4.2.3
     repo: https://kubernetes.github.io/ingress-nginx
     valuesInline:
-      annotations:
-        metallb.universe.tf/allow-shared-ip: production
-        metallb.universe.tf/address-pool: production-public-ips
+      controller:
+        service:
+          annotations:
+            metallb.universe.tf/allow-shared-ip: production
+            metallb.universe.tf/address-pool: production-public-ips
