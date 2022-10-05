@@ -4,3 +4,8 @@ st-reborn:
   config:
     Gameplay:
       uDifficulty: 3
+
+  type: LoadBalancer
+  annotations:
+    metallb.universe.tf/allow-shared-ip: production
+    metallb.universe.tf/address-pool: production-public-ips
