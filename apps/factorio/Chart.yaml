@@ -1,0 +1,13 @@
+apiVersion: v2
+
+name: apps
+description: Parent helm chart for factorio
+
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
+
+dependencies:
+  - name: factorio
+    repository: https://helm.samipsolutions.fi/samipsolutions
+    version: 1.2.2

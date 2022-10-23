@@ -1,0 +1,30 @@
+factorio:
+  service:
+    main:
+      ports:
+        http:
+          server:
+            enabled: true
+            type: LoadBalancer
+            externalTrafficPolicy: Cluster
+            annotations:
+              metallb.universe.tf/allow-shared-ip: production
+              metallb.universe.tf/address-pool: metallb-pool
+            ports:
+              factorio-game:
+                port: 34201
+                protocol: UDP
+                targetPort: 34197
+          rcon:
+            enabled: false
+            type: LoadBalancer
+            externalTrafficPolicy: Cluster
+            annotations:
+              metallb.universe.tf/allow-shared-ip: production
+              metallb.universe.tf/address-pool: metallb-pool
+            ports:
+              factorio-rcon:
+                enabled: true
+                port: 27015
+                protocol: TCP
+                targetPort: 27015
