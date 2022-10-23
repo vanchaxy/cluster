@@ -9,5 +9,5 @@ appVersion: "0.0.1"
 
 dependencies:
   - name: factorio
-    repository: https://helm.samipsolutions.fi/samipsolutions
+    repository: https://helm.samipsolutions.fi
     version: 1.2.2
