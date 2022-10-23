@@ -15,3 +15,4 @@ resources:
   - base/sealed-secrets.yaml
   - base/apps/excel-comparison-bot.yaml
   - base/apps/st-reborn.yaml
+  - base/apps/factorio.yaml
