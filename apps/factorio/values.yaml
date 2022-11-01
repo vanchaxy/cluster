@@ -1,4 +1,7 @@
 factorio:
+  
+  image:
+    tag: 1.1.70
   service:
     main:
       enabled: true
