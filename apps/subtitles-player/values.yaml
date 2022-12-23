@@ -14,7 +14,10 @@ subtitles-player:
       nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 
     hosts:
-      - subtitles.ivanchenko.io
+      - host: subtitles.ivanchenko.io
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
     tls:
       - secretName: subtitles-tls
         hosts:
