@@ -4,15 +4,18 @@ subtitles-player:
   imagePullSecrets:
     - name: regcred
 
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+  ingress:
+    enabled: false
+    className: nginx
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 
-  hosts:
-    - subtitles.ivanchenko.io
-  tls:
-    - secretName: subtitles-tls
-      hosts:
-        - subtitles.ivanchenko.io
+    hosts:
+      - subtitles.ivanchenko.io
+    tls:
+      - secretName: subtitles-tls
+        hosts:
+          - subtitles.ivanchenko.io
