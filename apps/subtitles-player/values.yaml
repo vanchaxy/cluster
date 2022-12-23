@@ -1,6 +1,6 @@
 subtitles-player:
   image:
-    tag: "main-89502e47"
+    tag: "main-c111c461"
   imagePullSecrets:
     - name: regcred
 
