@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: subtitles-player
+spec:
+  encryptedData:
+    .dockerconfigjson: AgAETPjO1aLcrKgPdclYvp6I1y/4yFkU/o8m8I0WmFk44Qp7SQpdL+0Eu6Wh8LH2JVHo+Y2SjKlr+H/q0n7qMiZvgs7767txL6RWs0k7STNmMUFfjoUNb6mH9q1v2hg4rMSmzuRDmMWvf9N0x8JjMKHJjjmQsvg0LIE5HWABnDLkJv8f6zZn+HNvzE7b4C1Lob4x6w8GHXAiw/rcOkOTigmECJWBkon7wdhq3iy38ez+HA/6MmaYFR1I/CzLM3PYjeWNWUjTr1r8EYms1gZ+4orohbYEX1EQJXr12cOKUx+f8DyswJ0o/4HLVwEKSvSZ/xOW4TodxSKLJWdgF2Nrh2kvgHYL/XTbSHKkaEgFosWQEOdA+Wbih1SpZecsfnYdc0poe78BmHZEo6TdPm1pWPc+LI6NFhy6tFxo03oIjv6LRtSS9cC0zLfmY1ETmWi9H3D6DAQVxxth9WpQEO6J8u1Y53URJrXHiy/2jSBWmOc0bQDOW83jyY2bnjep8iFnr/3aSpagbdTDCSgT3wDS341auc16gRs5UfzfiCiFfa5sss+rEvK4PNmEtxegJ4awZoSIrWsHcEu5u/47tlAohk+GUJswD6o3C4Z8SNg1bopFYscfAhbArpHLVMxUlVFpaiDVj7ZuMwsvXGLezzaSjbk0XdTaC17Lxf+W3dwIDoM/5fiEZeryIoomaIaZovUl9h3/e2p+SH+hRS1aYta+gOj3LqeUXV2hSXSpEwUul2wW0x4lMnb0wyCTmyKJXXtD65Iqhc/yOan02af/OIiYA0D9oHRNSRxRd4jky6NjhlmoTdH5HIcW54KIt6rNJLG/JqO0TQiKNnlXdYjDa2Z6WW0fKZPDlhS63McqvQIywoJu5XiY6TottamW+GHvPBmShuq3LA==
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: subtitles-player
+    type: kubernetes.io/dockerconfigjson
+

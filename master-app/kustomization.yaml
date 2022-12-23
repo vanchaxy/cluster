@@ -16,3 +16,4 @@ resources:
   - base/apps/excel-comparison-bot.yaml
   - base/apps/st-reborn.yaml
   - base/apps/factorio.yaml
+  - base/apps/subtitles-player
